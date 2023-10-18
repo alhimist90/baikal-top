@@ -1,0 +1,52 @@
+.footer {
+  min-height: 60px;
+
+  background-color: #000B2B;
+
+  @include vp-1023 {
+    padding: 20px 0;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  color: #fff;
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15px;
+  }
+}
+
+.footer__right-col {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @include vp-1023 {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15;
+  }
+}
+
+.footer__right-col a {
+  color: #fff;
+}
+
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 10px;
+}
+

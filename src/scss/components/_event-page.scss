@@ -1,0 +1,54 @@
+.event-page__info {
+  margin-top: 20px;
+
+  min-height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 60px;
+
+  background-color: #021240;
+
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 150%;
+}
+
+.event-page__info-date {
+  position: relative;
+
+  padding-left: 35px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../img/icon_date.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.event-page__wrapper {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+
+  padding: 100px 0;
+}
+
+.event-page__right-col {
+  text-align: right;
+}
+
+.event-page__photo img {
+  border-radius: 20px;
+}

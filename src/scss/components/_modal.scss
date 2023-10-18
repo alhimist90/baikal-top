@@ -1,0 +1,44 @@
+.graph-modal__container {
+  padding: 60px;
+
+  @include vp-767 {
+    padding: 20px;
+  }
+}
+
+.graph-modal__close {
+  right: 20px;
+  top: 20px;
+}
+
+.form__input-wrapper {
+  margin-bottom: 10px;
+
+  input,
+  textarea {
+    width: 100%;
+
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+    transition: 0.2s;
+
+    &:hover {
+      border: 1px solid #939191;
+    }
+  }
+}
+
+.modal__title {
+  text-align: center;
+}
+
+.modal__form-button {
+  width: 100%;
+}
+
+.form__input-button {
+  width: 100%;
+}

@@ -1,0 +1,61 @@
+.button {
+  position: relative;
+
+  display: inline-block;
+
+  text-align: center;
+
+  min-width: 160px;
+
+  padding: 16px 32px;
+
+  appearance: none;
+
+  background: #DB9903;
+
+  font-family: inherit;
+  color: #000B2B;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(259.56deg, #E6D586 28.18%, #FEF1B2 65.45%, #C99215 108.14%);
+    box-shadow: inset 0px 4px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity .3s ease 0s;
+  }
+
+  & > span {
+    position: relative;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  @include vp-1023 {
+    min-width: 250px;
+
+    padding: 15px 25px;
+
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    min-width: 220px;
+
+    padding: 15px 25px;
+
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/header.html')
+  <main class="main events">
+    <div class="cover-top" style="background-image: url('img/events_cover.jpg');"></div>
+    <section class="events__content content-page">
+      <div class="container">
+        <div class="events__content-wrapper">
+          <h1>Мероприятия</h1>
+          <p>
+            Наша компания организует мероприятия на протяжении всего года,
+            и они могут быть размещены в соответствии с особенностями каждого сезона.
+          </p>
+      </div>
+      </div>
+    </section>
+    <div class="content--bg-another">
+      <section class="events-card container">
+        <ul class="events-card__list">
+          <li class="events-card__item">
+            <img class="events-card__cover" src="img/events_card--spring.jpg" alt="">
+            <div class="events-card__content">
+              <p class="events-card__season">Весна</p>
+              <a class="button button--yellow" href="events-season.html">
+                <span>Подробнее</span>
+              </a>
+            </div>
+          </li>
+          <li class="events-card__item">
+            <img class="events-card__cover" src="img/events_card--summer.jpg" alt="">
+            <div class="events-card__content">
+              <p class="events-card__season">Лето</p>
+              <a class="button button--yellow" href="#">
+                <span>Подробнее</span>
+              </a>
+            </div>
+          </li>
+          <li class="events-card__item">
+            <img class="events-card__cover" src="img/events_card--autumn.jpg" alt="">
+            <div class="events-card__content">
+              <p class="events-card__season">Осень</p>
+              <a class="button button--yellow" href="#">
+                <span>Подробнее</span>
+              </a>
+            </div>
+          </li>
+          <li class="events-card__item">
+            <img class="events-card__cover" src="img/events_card--winter.jpg" alt="">
+            <div class="events-card__content">
+              <p class="events-card__season">Зима</p>
+              <a class="button button--yellow" href="#">
+                <span>Подробнее</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modal.html')
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.events__content-wrapper {
+  max-width: 700px;
+}
+
+.events-card__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.events-card__item {
+  position: relative;
+
+  display: inline-block;
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  height: 350px;
+}
+
+.events-card__item img {
+  transition: 1s;
+  display: block;
+
+  border-radius: 20px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.events-card__item:hover img {
+  transform: scale(1.2);
+}
+
+.events-card__content {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  padding-top: 30px;
+  padding-bottom: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.events-card__season {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: #000B2B;
+
+  padding-left: 50px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+
+    background-image: url(../img/icon_season.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+
+    width: 35px;
+    height: 35px;
+  }
+}

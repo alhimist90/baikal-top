@@ -1,0 +1,140 @@
+.cases-page {
+  color: #fff;
+}
+
+.cases-page__content {
+  position: relative;
+}
+
+.cases-page__wrapper {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.cases-festival__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 50px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cases-festival__card {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    z-index: 2;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  }
+}
+
+.cases-festival__card img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+
+  transition: 1s;
+}
+
+.cases-festival__card:hover img {
+  transform: scale(1.2);
+}
+
+.cases-festival__card-content {
+  backface-visibility: hidden;
+
+  padding: 0 30px;
+
+  height: 100%;
+
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  height: 65%;
+
+  text-align: left;
+
+  color: #fff;
+
+  z-index: 2;
+
+  @include vp-1023 {
+    bottom: 30px;
+  }
+}
+
+.cases-festival__card-content--visible {
+  transition: transform 0.35s;
+
+  transform: translate3d(0, 120px, 0);
+
+  @include vp-1023 {
+    transform: none;
+    transition: none;
+  }
+}
+
+.cases-festival__card-content--disable {
+  transition: opacity 0.2s, transform 0.35s;
+  transform: translate3d(0, 210px, 0);
+
+  @include vp-1023 {
+    transform: none;
+    transition: none;
+  }
+}
+
+.cases-festival__card:hover .cases-festival__card-content--disable {
+  transition-delay: 0.05s;
+	transition-duration: 0.35s;
+
+  opacity: 1;
+}
+
+.cases-festival__card:hover .cases-festival__card-content--visible,
+.cases-festival__card:hover .cases-festival__card-content--disable {
+  transform: translate3d(0,0,0);
+}
+
+.cases-festival__button-wrapper {
+  text-align: center;
+}
+
+.cases-festival__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.cases-festival__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include vp-1023 {
+    margin-bottom: 30px;
+  }
+}

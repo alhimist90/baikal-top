@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/header.html')
+  <main class="main services-page">
+    <div class="cover-top" style="background-image: url('img/services_cover.jpg');"></div>
+    <section class="services-page__content content-page">
+      <div class="container">
+        <div class="services-page__wrapper">
+          <h1>Услуги</h1>
+          <p>Все наши мероприятия проходят с большим успехом и с большим количеством участников. Мы проводим как индивидуальные мероприятия, так и более масштабные.</p>
+          <p>Наши вечеринки и праздники проводятся в разных залах, что позволяет нам подобрать подходящий вариант для любого мероприятия.</p>
+          <p>
+            В нашей команде работают профессионалы высокого класса, способные сделать ваше мероприятие незабываемым.
+          </p>
+        </div>
+        <div class="marquee">
+          <p>Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183; Услуги &#183;</p>
+        </div>
+      </div>
+    </section>
+    <div class="content--bg-another">
+      <section class="organize-services container">
+        <h1 class="organize-services__title title--line">Мы организуем</h1>
+        <div class="organize-services__wrapper">
+          <a class="organize-services__card" href="#">
+            <img src="img/organize-card_1.jpg" alt="">
+            <div class="organize-services__content">
+              <h2>Mice</h2>
+              <p>
+                корпоративные встречи, тимбилдинги, деловые конференции, съезды, форумы, семинары, выездные корпоративные праздники
+              </p>
+            </div>
+          </a>
+          <a class="organize-services__card" href="#">
+            <img src="img/organize-card_2.jpg" alt="">
+            <div class="organize-services__content">
+              <h2>Event</h2>
+              <p>
+                мастер-классы,
+                Online-мероприятия, частные,
+                мероприятия
+              </p>
+            </div>
+          </a>
+          <a class="organize-services__card" href="#">
+            <img src="img/organize-card_3.jpg" alt="">
+            <div class="organize-services__content">
+              <h2>Vip</h2>
+              <p>
+                деловые мероприятия по заказу,
+                организация бизнес- туризма
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+    <section class="block-form">
+      <div class="block-form__cover container">
+        <div class="block-form__bg">
+          <div class="block-form__left-col">
+            <h2>
+              Остались вопросы?
+              <br>
+              мы вас проконсультируем
+            </h2>
+            <p>
+              Нажимая на кнопку “Оставить заявку”,
+              вы даёте согласие на обработку
+              персональных данных
+            </p>
+          </div>
+          <div class="block-form__right-col">
+            <div class="form__bottom">
+              <form class="form" action="">
+                <div>
+                  <input type="text" name="" id="" placeholder="Ваше имя">
+                </div>
+                <div>
+                  <input type="tel" name="" id="" placeholder="Ваш номер">
+                </div>
+                <div>
+                  <input type="mail" name="" id="" placeholder="Ваш e-mail">
+                </div>
+                <button class="button button--yellow">
+                  <span>
+                    Оставить заявку
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modal.html')
+</body>
+
+</html>

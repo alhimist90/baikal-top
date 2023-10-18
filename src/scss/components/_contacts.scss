@@ -1,0 +1,28 @@
+.contacts-page__text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 140%;
+
+  span {
+    font-weight: 700;
+  }
+
+  @include vp-519 {
+    font-size: 15px;
+  }
+}
+
+.contacts-map__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 140%;
+}
+
+.contacts-map__wrapper {
+  width: 500px;
+
+  @include vp-519 {
+    width: 300px;
+  }
+}

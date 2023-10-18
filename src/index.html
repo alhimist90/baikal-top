@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/header_main.html')
+  <main class="main page__main">
+    <div class="main__wrapper container">
+      <a class="main__logo" href="#">
+        <img src="img/main_logo.png" alt="">
+      </a>
+      <div class="swiper-pagination vertical-swiper-pagination"></div>
+    </div>
+    <div class="swiper vertical-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('img/baikal_summer.jpg');">
+        </div>
+        <div class="swiper-slide" style="background-image: url('img/baikal_autumn.jpg');">
+        </div>
+        <div class="swiper-slide" style="background-image: url('img/baikal_winter.jpg');">
+        </div>
+        <div class="swiper-slide" style="background-image: url('img/baikal_spring.jpg');">
+        </div>
+      </div>
+    </div>
+  </main>
+  @include('partials/footer.html')
+  @include('partials/modal.html')
+</body>
+
+</html>
